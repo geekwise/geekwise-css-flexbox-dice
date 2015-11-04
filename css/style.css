@@ -7,13 +7,14 @@ html,body{
 }
 
 div{
-    display:flex;
-    flex-direction:row;
     width:10em;
     height:10em;
-    background-color:white;
-    justify-content:center;
+    border:3px solid black;
+    display:flex;
+    flex-direction:row;
+   
 }
+
 
 span::before{
     width:3em;
@@ -25,9 +26,34 @@ span::before{
     border-radius:10em;
 }
 
-div > span:nth-child(1){
-   align-self:flex-start; 
+span:nth-child(2){
+
+    alignment-self:center;
 }
+
+
+/*div{*/
+/*    display:flex;*/
+/*    flex-direction:row;*/
+/*    width:10em;*/
+/*    height:10em;*/
+/*    background-color:white;*/
+/*    justify-content:center;*/
+/*}*/
+
+/*span::before{*/
+/*    width:3em;*/
+/*    height:3em;*/
+/*    color:black;*/
+/*    display:inline-flex;*/
+/*    content:'';*/
+/*    background-color:black;*/
+/*    border-radius:10em;*/
+/*}*/
+
+/*div > span:nth-child(1){*/
+/*   align-self:flex-start; */
+/*}*/
 
 div > span:nth-child(1):active{
     align-self:flex-end;
