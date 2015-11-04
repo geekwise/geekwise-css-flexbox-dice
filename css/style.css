@@ -1,0 +1,36 @@
+html,body{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    box-sizing:border;
+}
+
+div{
+    display:flex;
+    flex-direction:row;
+    width:10em;
+    height:10em;
+    background-color:white;
+    justify-content:center;
+}
+
+span::before{
+    width:3em;
+    height:3em;
+    color:black;
+    display:inline-flex;
+    content:'';
+    background-color:black;
+    border-radius:10em;
+}
+
+div > span:nth-child(1){
+   align-self:flex-start; 
+}
+
+div > span:nth-child(1):active{
+    align-self:flex-end;
+}
+
+
